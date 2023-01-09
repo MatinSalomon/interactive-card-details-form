@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+  
+</head>
+<body>
+
+  <main>
+    <section>
+
+      <div id="containerCard">
+
+        <div id="cardFront">
+
+          <div id="imgFront">
+            <img src="./images/card-logo.svg"> 
+            <h2 id="NumInCard">0000 0000 0000 0000</h2>
+            <div>
+              <p id="NameInCard"> Jane Appleseed </p>
+              <p id="ExpInCard">00/00</p>
+            </div>
+          </div>
+
+
+
+          <div id="cardBack">
+            <div id="imgBack">
+              <h4 id="CvcInCard">000</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <form id="containerData">
+        <label for="CardHolderName"> CardHolderName 
+          <input placeholder="e.g. Jane Appleseed" type="text" id="CardHolderName" >
+          <p id="errorCardHolderName">can't be blank</p>
+        </label>
+        
+
+        <label for="CardNumber"> CardNumber 
+          <input type="text" id="CardNumber" placeholder="e.g. 1234 5678 9123 0000">
+          <p id="errorCardNumber">can't be blank</p>
+        </label>
+        
+        <div>
+          <label for="exp"> EXP.DATE 
+            <input placeholder="MM" type="number" id="exp">
+            <p id="errorExp">can't be blank</p>
+          </label>
+          
+
+          <label for="mm_yy"> (mm/yy) 
+          <input placeholder="YY" type="number" id="mm_yy">
+          <p id="errorMm_yy">can't be blank</p>
+          </label>
+
+          <label for="cvc"> cvc 
+           <input placeholder="e.g. 123" type="number" id="cvc">
+            <p id="errorCvc">can't be blank</p>
+          </label>
+        </div>
+        <button id="btn"> Confirm </button>
+      </form>
+
+
+      <article id="thank">
+          <img src="./images/icon-complete.svg" alt="">
+          <h1>THANK YOU!</h1>
+          <p>We've added your card details</p>
+          <button id="btnContinue">Continue</button>
+      </article>
+  </section>
+  </main>
+
+
+
+
+
+
+
+
+
+<script src="./app.js"></script>
+
+
+
+
+<!-- 
+  0000 0000 0000 0000
+  Jane Appleseed
+  00/00
+
+  000
+
+  Cardholder Name
+  e.g. Jane Appleseed
+
+  Card Number
+  e.g. 1234 5678 9123 0000
+
+  Exp. Date (MM/YY)
+  MM
+  YY
+
+  CVC
+  e.g. 123
+
+  Confirm
+
+  Completed state start
+
+  Thank you!
+  We've added your card details
+  Continue
+   -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

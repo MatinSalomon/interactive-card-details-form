@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --LightGrayishViolet: hsl(270, 3%, 87%);
+    --DarkGrayishViolet: hsl(279, 6%, 55%);
+    --VeryDarkViolet: hsl(278, 68%, 11%);
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+#containerCard{
+    background-image: url(./images/bg-main-desktop.png);
+    height: 100vh;
+    width: 483px;
+    background-repeat: no-repeat;
+}
+
+#containerCard #cardFront{
+    height: 25vh;
+    width: 30vw;
+    margin-top: 45%;
+}
+#containerCard #cardFront #imgFront{
+    height: 100%;
+    width: 80%;
+    background-image: url(./images/bg-card-front.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 14vw;
+    margin-bottom: 7%;
+}   
+
+#containerCard #cardFront #imgFront img{
+    width: 20%;
+    height: 20%;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+
+#containerCard #cardFront #imgFront #NumInCard{
+    color: var(--White);
+    font-size: 1.7vw;
+    padding: 10% 0% 2% 10%;
+}   
+#containerCard #cardFront #imgFront div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#containerCard #cardFront #imgFront #NameInCard{
+    color: var(--White);  
+    padding-top: 2%; 
+    font-size: 1vw;
+}
+
+#containerCard #cardFront #imgFront #ExpInCard{
+    padding-top: 2%;
+    color: var(--White);  
+    font-size: 1vw;    
+}
+
+#containerCard #cardBack{
+    height: 25vh;
+    width: 30vw;    
+}
+
+#containerCard #cardBack #imgBack {
+    height: 100%;
+    width: 80%;
+    background-image: url(./images/bg-card-back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 25vw;
+}
+#containerCard #cardBack #CvcInCard{
+    color: var(--White);
+    padding-top: 23.5%;
+    padding-left: 75%;
+    font-size: 50%;
+
+}
+
+
+
+
+
+#containerData{
+    margin-left: 25%;
+    margin-right: 15%;
+}
+#containerData label input{
+    border-radius: 6px;
+    border: 1px solid var(--DarkGrayishViolet); 
+    margin-bottom: 0%;
+    line-height: 1.15;
+    height: 5vh;
+}
+
+#containerData label p{
+    color: hsl(0, 100%, 66%);
+    display: none;
+}
+#errorExp{
+    font-size: 9px;
+}
+#errorMm_yy{
+    font-size: 8px;
+}
+#containerData input:hover{
+    outline:1px solid hsl(249, 99%, 64%);
+    border-top-color: hsl(249, 99%, 64%);
+    border-right-color: hsl(278, 94%, 30%);
+    border-bottom-color: hsl(249, 99%, 30%);
+    border-left-color: hsl(278, 94%, 30%);
+    cursor: pointer;
+}   
+#containerData input:focus{
+    outline:1px solid hsl(249, 99%, 64%);
+    border-top-color: hsl(249, 99%, 64%);
+    border-right-color: hsl(278, 94%, 30%);
+    border-bottom-color: hsl(249, 99%, 30%);
+    border-left-color: hsl(278, 94%, 30%);
+}   
+#containerData label{
+    margin-bottom: 3%;
+    font-size: 13px;
+}
+
+#containerData #CardHolderName{
+    width: 80%;    
+}
+
+#containerData #CardNumber{
+    width: 80%;
+}
+#containerData div{
+    display: flex;
+    margin-bottom: 26px;
+    position: relative;
+    gap: 10px;
+}
+
+
+#containerData div #exp{
+    width: 70%;
+}
+
+#containerData div #mm_yy{
+    width: 70%;
+}
+#containerData div #cvc{
+    width: 80%; 
+}
+#containerData #btn {
+    width: 80%;
+    height: 30px;
+    background-color: var(--VeryDarkViolet);
+    color: var(--White);
+    cursor: pointer;
+}
+
+#thank{
+    margin-left: 25%;
+    margin-right: 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display:none;
+}
+
+#thank img{
+    margin-bottom: 30px;
+    width: 25%;
+    height: 25%;
+}
+#thank h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#thank p{
+    color: var(--DarkGrayishViolet);
+    margin-top: 5%;
+}
+
+#btnContinue{
+    width: 300px;
+    height: 40px;
+    background-color: var(--VeryDarkViolet);
+    color: var(--White);
+    cursor: pointer;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+@media(max-width:750px){
+   section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    #containerCard{
+    background-image: url(./images/bg-main-mobile.png);
+    height: 25vh;
+    width: 100vw;
+    background-repeat:repeat;
+    }
+
+    #containerCard #cardFront{
+        height: 100%;
+        width: 100%;
+        margin-top: 25%;
+    }
+    #containerCard #cardFront #imgFront{
+        margin-top: 30%;
+        margin-left: 5%;
+        margin-bottom: -84%;
+        position: relative;
+    }  
+    #containerCard #cardFront #imgFront img{
+        width: 20%;
+        height: 15%;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+    #containerCard #cardFront #imgFront #NumInCard{
+        font-size: 130%;
+        padding: 10% 10% 2% 10%;
+    }  
+    #containerCard #cardFront #imgFront #NameInCard{
+        font-size: 70%;
+    }
+    #containerCard #cardFront #imgFront #ExpInCard{ 
+        font-size: 70%;    
+    }
+    #containerCard #cardBack{
+        height: 100%;
+        width: 100%;
+        margin-top: 0%;
+    }
+    #containerCard #cardBack #imgBack {
+        height: 100%;
+        width: 80%;;
+        margin-left: 15%;
+    }
+    #containerCard #cardBack #CvcInCard{
+        padding-left: 77%;
+        font-size: 100%;
+
+    }
+    #containerData{
+        margin-top: 20%;
+        margin-left: 5%;
+        margin-right: 0%;
+    }
+    #containerData #CardHolderName{
+        width: 99%;    
+    }
+    
+    #containerData #CardNumber{
+        width: 99%;
+    }
+    #thank{
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+
+}
+
+
+
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
